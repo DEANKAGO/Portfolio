@@ -1,6 +1,7 @@
 import React from 'react';
 import './home.css';
 import { Navbar } from '../../components/Navbar/Navbar';
+import bgImage from '../../images/portfolio.jpg';
 
 export const Home = () => {
   return (
@@ -20,7 +21,7 @@ export const Home = () => {
         </div>
       </div>
       <div className='homeImage'>
-        <img className='image' />
+        <img className='image' src={bgImage} />
       </div>
     </div>
   );
