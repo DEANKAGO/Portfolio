@@ -1,10 +1,13 @@
 import React from 'react';
 import './navbar.css';
+import Logo from '../../images/logo.jpg';
 
 export const Navbar = () => {
   return (
     <nav>
-      <div className='logo'></div>
+      <div className='logo'>
+        <img src={Logo} />
+      </div>
       <div className='menuContainer'>
         <ul>
           <li>
