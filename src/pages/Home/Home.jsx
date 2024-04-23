@@ -14,7 +14,7 @@ export const Home = () => {
             Welcome to my portfolio! <br />
             <span className='span'>I'm Martin Kago Muchai</span>
           </h1>
-          <h1 className='intro'>A passionate software engineer</h1>
+          <h3 className='intro'>A passionate software engineer</h3>
           <p className='contentP'>
             I specialize in full-stack development, mobile app development,
             frontend development and backend development. My goal is to leverage

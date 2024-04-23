@@ -30,6 +30,13 @@
     height: 20vh;
     width: 20vh;
 }
+.cardtitle {
+    font-family: Alice;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
 .cardContainer {
     display: flex;
     justify-content: center;
@@ -56,11 +63,20 @@ flex-grow: 1;
     width: 100%;
     text-align: left;
     padding: 0;
-  }
-  .languages li {
-    display: flex;
-    margin: 10px 10px;
-    justify-content: center;
+}
+.languages li {
+display: flex;
+margin: 10px 10px;
+justify-content: center;
+color: #959595;
+}
 
+.contentP {
+    color: #959595;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-top: 20px;
   }
  

@@ -26,12 +26,14 @@ export const Services = () => {
                 />
               </div>
               <Card.Body className='cardBody'>
-                <Card.Title>Backend Engineer</Card.Title>
+                <Card.Title className='cardtitle'>Backend Engineer</Card.Title>
                 <Card.Text>
                   <ul className='languages'>
                     <li>Python</li>
                     <li>NodeJs</li>
                     <li>TypeScript</li>
+                    <li>Django</li>
+                    <li>Flask</li>
                   </ul>
                 </Card.Text>
               </Card.Body>
@@ -51,7 +53,7 @@ export const Services = () => {
                 />
               </div>{' '}
               <Card.Body className='cardBody'>
-                <Card.Title>Web Developer</Card.Title>
+                <Card.Title className='cardtitle'>Web Developer</Card.Title>
                 <Card.Text>
                   <ul className='languages'>
                     <li>ReactJs</li>
@@ -77,10 +79,12 @@ export const Services = () => {
                 />
               </div>{' '}
               <Card.Body className='cardBody'>
-                <Card.Title>Mobile Developer</Card.Title>
+                <Card.Title className='cardtitle'>Mobile Developer</Card.Title>
                 <Card.Text>
                   <ul className='languages'>
                     <li>React Native</li>
+                    <li>iOS</li>
+                    <li>Android</li>
                   </ul>
                 </Card.Text>
               </Card.Body>
@@ -100,7 +104,7 @@ export const Services = () => {
                 />
               </div>{' '}
               <Card.Body className='cardBody'>
-                <Card.Title>Web Design</Card.Title>
+                <Card.Title className='cardtitle'>Web Design</Card.Title>
                 <Card.Text>
                   <ul className='languages'>
                     <li>Figma</li>
