@@ -1,0 +1,39 @@
+.footerContainer {
+    background-color: #252525;
+    color: #ffffff;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.bottom-bar {
+    background-color: #1a1a1a;
+    color: #959595;
+    text-align: center;
+    padding: 10px 0;
+}
+.footerRow {
+    display: flex;
+    justify-content: center;
+}
+.footerContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer h3 {
+    color: #ffffff;
+    font-family: Alice;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.footer ul {
+    list-style-type: none;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+}
+.footer ul li {
+    color: #959595;
+}

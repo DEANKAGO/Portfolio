@@ -4,6 +4,8 @@ import { Navbar } from '../../components/Navbar/Navbar';
 import bgImage from '../../images/portfolio.jpg';
 import { Services } from '../Services/Services';
 import { Skills } from '../Skills/Skills';
+import { Footer } from '../../components/Footer/Footer';
+
 export const Home = () => {
   return (
     <div className='container'>
@@ -28,7 +30,8 @@ export const Home = () => {
         </div>
       </div>
       <Services />
-      <Skills/>
+      <Skills />
+      <Footer />
     </div>
   );
 };
