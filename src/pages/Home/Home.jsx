@@ -2,6 +2,7 @@ import React from 'react';
 import './home.css';
 import { Navbar } from '../../components/Navbar/Navbar';
 import bgImage from '../../images/portfolio.jpg';
+import { Services } from '../Services/Services';
 
 export const Home = () => {
   return (
@@ -20,12 +21,13 @@ export const Home = () => {
             my technical expertise and problem-solving skills to deliver
             innovative solutions that meet and exceed client expectations.
           </p>
-          <button className='btnContact'>Contact Me</button>
+          <button className='btnContact'>Lets Engage</button>
         </div>
         <div className='homeImage'>
           <img className='image' src={bgImage} />
         </div>
       </div>
+      <Services />
     </div>
   );
 };
