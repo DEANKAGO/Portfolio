@@ -1,7 +1,6 @@
 import React from 'react';
 import './services.css';
-import { Container } from 'react-bootstrap';
-import { Row, Col, Card, Button, Image } from 'react-bootstrap';
+import { Container, Row, Col, Card, Button, Image } from 'react-bootstrap';
 import Backend from '../../images/backend.jpg';
 import Frontend from '../../images/front.jpg';
 import Mobile from '../../images/mobile.jpg';

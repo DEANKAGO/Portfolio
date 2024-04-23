@@ -4,6 +4,7 @@ import { Container } from 'react-bootstrap';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Home } from './pages/Home/Home';
 import { Services } from './pages/Services/Services';
+import { Skills } from './pages/Skills/Skills';
 
 function App() {
   return (
@@ -11,7 +12,6 @@ function App() {
       <Router>
         <Routes>
           <Route exact path='/' element={<Home />} />
-          <Route path='/services' element={<Services />} />
         </Routes>
       </Router>
     </Container>

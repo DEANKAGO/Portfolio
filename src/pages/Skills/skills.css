@@ -1,0 +1,48 @@
+.skillsContainer {
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-color: #201F1F;
+}
+.skillsHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.skillsHeader h2 {
+    color: #ffffff;
+    font-family: Alice;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.skillsRow {
+    display: flex;
+    justify-content: center;
+    margin-top: 8%;
+    flex-wrap: wrap;
+}
+
+.skillsDesc {
+    margin-bottom: 30px;
+    border-color: #ffffff;
+    background-color: #252525;
+    border-radius: 15px; 
+    position: relative; 
+}
+.skillsDesc h5 {
+    color: #ffffff;
+    font-family: Alice;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 20px 20px;
+    padding-top: 10px;
+}
+.skillsDesc p {
+    color: #959595;
+    margin: 20px 20px;
+    padding-bottom: 10px;
+}
