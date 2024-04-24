@@ -1,15 +1,45 @@
-.container {
+.aboutContainer {
     width: 100%;
     min-height: 100vh;
     background-size: cover;
     background-position: center;
-    background-color: #201F1F;
+    background-color: #252525;
 }
-.content {
-    margin-top: 8%;
-    width: 100%;
+.aboutHeader {
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
-    color: #000000;
-} 
+}
+.aboutHeader h2 {
+    color: #ffffff;
+    font-family: Alice;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.explain p {
+    color: #959595;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-top: 20px;
+    width: 70%;
+}
+.explain {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sp {
+    width: 70%;
+    border-top: 2px solid #ffffff; 
+    justify-content: center;
+}
+.line {
+    display: flex;
+    justify-content: center;
+
+}

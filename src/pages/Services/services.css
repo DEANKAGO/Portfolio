@@ -32,7 +32,6 @@
 }
 .cardtitle {
     font-family: Alice;
-    font-size: 40px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -70,3 +69,5 @@ margin: 10px 10px;
 justify-content: center;
 color: #959595;
 }
+
+ 

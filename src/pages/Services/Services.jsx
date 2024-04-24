@@ -5,6 +5,7 @@ import Backend from '../../images/backend.jpg';
 import Frontend from '../../images/front.jpg';
 import Mobile from '../../images/mobile.jpg';
 import Web from '../../images/web.jpg';
+import { Link } from 'react-router-dom';
 
 export const Services = () => {
   return (
@@ -37,7 +38,9 @@ export const Services = () => {
                 </Card.Text>
               </Card.Body>
               <Card.Footer className='bg-white'>
-                <Button variant='primary'>Learn More</Button>
+                <Link to='/about'>
+                  <Button variant='primary'>Learn More</Button>
+                </Link>
               </Card.Footer>
             </Card>
           </Col>

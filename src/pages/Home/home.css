@@ -46,11 +46,11 @@
     font-family: Alice;
 }
 
-.contentP {
+.content P {
     color: #959595;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     padding-top: 20px;
-  }
+}
