@@ -2,12 +2,14 @@ import React from 'react';
 import './projects.css';
 import { Row, Col, Container, Card, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import { Navbar } from '../Navbar/Navbar';
 import { Footer } from '../Footer/Footer';
 import { projectsData } from '../../data/Data';
 
 export const Projects = () => {
   return (
     <Container className='projectsContainer'>
+      <Navbar />
       <div className='projectsContent' mt-5>
         <div className='projectsHeader'>
           <h2>Projects</h2>

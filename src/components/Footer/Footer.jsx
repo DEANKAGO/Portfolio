@@ -14,6 +14,8 @@ export const Footer = () => {
             <ul>
               <li>Email: martokhago@gmail.com</li>
               <li>Phone: +254745262475</li>
+              <li>Github: https://github.com/DEANKAGO </li>
+              <li>Linkedin: www.linkedin.com/in/martin-muchai-58109ba9/</li>
               <li>Location: Nairobi, Kenya</li>
             </ul>
           </div>

@@ -1,12 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './home.css';
 import { Navbar } from '../../components/Navbar/Navbar';
 import bgImage from '../../images/portfolio.jpg';
 import { Services } from '../Services/Services';
 import { Skills } from '../Skills/Skills';
 import { Footer } from '../../components/Footer/Footer';
+import { Modal, Button } from 'react-bootstrap';
 
 export const Home = () => {
+  const [show, setShow] = useState(false);
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
   return (
     <div className='container'>
       <Navbar />
@@ -23,7 +28,9 @@ export const Home = () => {
             my technical expertise and problem-solving skills to deliver
             innovative solutions that meet and exceed client expectations.
           </p>
-          <button className='btnContact'>Lets Engage</button>
+          <button className='btnContact' onClick={handleShow}>
+            Lets Engage
+          </button>
         </div>
         <div className='homeImage'>
           <img className='image' src={bgImage} alt='welcome' />
@@ -32,6 +39,30 @@ export const Home = () => {
       <Services />
       <Skills />
       <Footer />
+      <Modal
+        show={show}
+        onHide={handleClose}
+        backdrop='static'
+        keyboard={false}
+      >
+        <Modal.Header closeButton>
+          <Modal.Title className='modalHeader'>Let's Connect</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <ul className='contactList'>
+            <li>Email: martokhago@gmail.com</li>
+            <li>Phone: +254745262475</li>
+            <li>Github: github.com/DEANKAGO </li>
+            <li>Linkedin: www.linkedin.com/in/martin-muchai-58109ba9/</li>
+            <li>Location: Nairobi, Kenya</li>
+          </ul>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant='danger' onClick={handleClose}>
+            Close
+          </Button>
+        </Modal.Footer>
+      </Modal>
     </div>
   );
 };

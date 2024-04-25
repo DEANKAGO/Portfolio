@@ -3,8 +3,10 @@ import './about.css';
 import { Container } from 'react-bootstrap';
 import { Footer } from '../../components/Footer/Footer';
 import { Navbar } from '../../components/Navbar/Navbar';
+import { useParams } from 'react-router-dom';
 
 export const About = () => {
+  
   return (
     <Container className='aboutContainer'>
       <Navbar />

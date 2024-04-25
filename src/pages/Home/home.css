@@ -54,3 +54,15 @@
     line-height: normal;
     padding-top: 20px;
 }
+.contactList {
+    list-style-type: none;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+}
+.contactList li {
+    font-family: Alice;
+}
+.modalHeader {
+    font-family: Alice;
+}

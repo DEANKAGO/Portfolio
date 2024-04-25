@@ -32,3 +32,38 @@ export const projectsData = [
     link: 'https://github.com/DEANKAGO/searchGithub',
   },
 ];
+
+export const myServices = [
+  {
+    id: 1,
+    photo: require('../images/backend.jpg'),
+    name: 'Backend Engineer',
+    languages: ['Python', 'NodeJs', 'Typescript', 'Django', 'Flask'],
+    Header: 'Backend Services',
+    desc: '',
+  },
+  {
+    id: 2,
+    photo: require('../images/front.jpg'),
+    name: 'Web Developer',
+    languages: ['ReactJs', 'Tailwind-CSS', 'Typescript', 'Html & Css'],
+    Header: 'Web Development',
+    desc: '',
+  },
+  {
+    id: 3,
+    photo: require('../images/mobile.jpg'),
+    name: 'Mobile Developer',
+    languages: ['React Native', 'Ios', 'Android'],
+    Header: 'Mobile Development',
+    desc: '',
+  },
+  {
+    id: 4,
+    photo: require('../images/backend.jpg'),
+    name: 'Web Design',
+    languages: ['Figma'],
+    Header: 'Web Design',
+    desc: '',
+  },
+];

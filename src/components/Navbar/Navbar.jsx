@@ -29,12 +29,12 @@ export const Navbar = () => {
             </Link>
           </li>
           <li>
-            <a>Contacts</a>
+            <a>Skills</a>
           </li>
         </ul>
       </div>
       <div className='btnContainer'>
-        <button className='btnContact'>Contact</button>
+        <button className='btnContact'>Contact Me</button>
       </div>
     </nav>
   );
