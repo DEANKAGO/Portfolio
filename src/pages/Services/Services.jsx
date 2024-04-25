@@ -10,8 +10,8 @@ import { Link } from 'react-router-dom';
 export const Services = () => {
   return (
     <Container className='serviceContainer'>
-      <div className='mt-5'>
-        <div className='servicesHeader mb-5 p-2'>
+      <div className=''>
+        <div className='servicesHeader mb-5'>
           <h2 className=''>My Services</h2>
         </div>
         <Row md={4} className='serviceRow'>

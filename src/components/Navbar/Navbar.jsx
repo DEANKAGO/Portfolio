@@ -1,23 +1,32 @@
 import React from 'react';
 import './navbar.css';
 import Logo from '../../images/logo.jpg';
+import { Link } from 'react-router-dom';
 
 export const Navbar = () => {
   return (
     <nav>
       <div className=''>
-        <img className='logo' src={Logo} />
+        <Link to='/'>
+          <img className='logo' src={Logo} />
+        </Link>
       </div>
       <div className='menuContainer'>
         <ul>
           <li>
-            <a>Home</a>
+            <Link to='/'>
+              <a>Home</a>
+            </Link>
           </li>
           <li>
-            <a>About</a>
+            <Link to='/services'>
+              <a>Services</a>
+            </Link>
           </li>
           <li>
-            <a>Projects</a>
+            <Link to='/projects'>
+              <a>Projects</a>
+            </Link>
           </li>
           <li>
             <a>Contacts</a>

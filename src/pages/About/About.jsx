@@ -19,8 +19,8 @@ export const About = () => {
             <br />
             <br />
             First off, it's crucial to really understand what the project needs.
-            That means diving deep into the requirements, chatting with
-            stakeholders, and making sure we're all on the same page.
+            That means diving deep into the requirements and making sure we're
+            all on the same page.
             <br />
             <br /> Then comes choosing the right tech. I'm all about finding the
             perfect stack that balances scalability, performance, security, and

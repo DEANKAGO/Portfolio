@@ -1,0 +1,49 @@
+.projectsContainer {
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-color: #252525;
+}
+.projectsHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.projectsHeader h2 {
+    color: #ffffff;
+    font-family: Alice;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.projectsCardBody {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.projectsCardtitle {
+    font-family: Alice;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    justify-content: center;
+}
+.projectsCardtext p {
+    display: flex;
+    justify-content: center;
+}
+.sp {
+    width: 70%;
+    border-top: 2px solid #ffffff; 
+    justify-content: center;
+}
+.line {
+    display: flex;
+    justify-content: center;
+
+}
