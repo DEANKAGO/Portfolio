@@ -17,14 +17,14 @@ export const Services = ({ elementRef }) => {
               <Card style={{ width: '18rem' }} className='content'>
                 <div className='cardContainer'>
                   <Image
-                    src={service.photo}
+                    src={service?.photo}
                     className='img'
                     roundedCircle
                     alt='backend logo'
                   />
                 </div>
                 <Card.Body className='cardBody'>
-                  <Card.Title className='cardtitle'>{service.name}</Card.Title>
+                  <Card.Title className='cardtitle'>{service?.name}</Card.Title>
                   <Card.Text>
                     <ul className='languages'>
                       {service.languages.map((language) => (
