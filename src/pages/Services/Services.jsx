@@ -1,12 +1,12 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import './services.css';
 import { Container, Row, Col, Card, Button, Image } from 'react-bootstrap';
 import { myServices } from '../../data/Data';
 import { Link } from 'react-router-dom';
 
-export const Services = () => {
+export const Services = ({ elementRef }) => {
   return (
-    <Container className='serviceContainer'>
+    <Container ref={elementRef} className='serviceContainer'>
       <div className=''>
         <div className='servicesHeader mb-5'>
           <h2 className=''>My Services</h2>
@@ -28,13 +28,13 @@ export const Services = () => {
                   <Card.Text>
                     <ul className='languages'>
                       {service.languages.map((language) => (
-                        <li>{language.service}</li>
+                        <li>{language}</li>
                       ))}
                     </ul>
                   </Card.Text>
                 </Card.Body>
                 <Card.Footer className='bg-white'>
-                  <Link to='/about${service.id}'>
+                  <Link to={`/about/${service.id}`}>
                     <Button variant='primary'>Learn More</Button>
                   </Link>
                 </Card.Footer>

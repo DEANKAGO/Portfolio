@@ -1,9 +1,17 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import './navbar.css';
 import Logo from '../../images/logo.jpg';
 import { Link } from 'react-router-dom';
 
-export const Navbar = () => {
+export const Navbar = ({ servicesRef, skillsRef, footerRef }) => {
+  const scrollToServices = () => {
+    servicesRef.current?.scrollIntoView({ behavior: 'smooth' });
+  };
+
+  const scrollToSkills = () => {
+    skillsRef.current?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <nav>
       <div className=''>
@@ -19,9 +27,7 @@ export const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link to='/services'>
-              <a>Services</a>
-            </Link>
+            <a onClick={scrollToServices}>Services</a>
           </li>
           <li>
             <Link to='/projects'>
@@ -29,7 +35,7 @@ export const Navbar = () => {
             </Link>
           </li>
           <li>
-            <a>Skills</a>
+            <a onClick={scrollToSkills}>Skills</a>
           </li>
         </ul>
       </div>

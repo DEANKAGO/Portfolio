@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import './home.css';
 import { Navbar } from '../../components/Navbar/Navbar';
 import bgImage from '../../images/portfolio.jpg';
@@ -11,10 +11,17 @@ export const Home = () => {
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+  const skillsRef = useRef(null);
+  const servicesRef = useRef(null);
+  const footerRef = useRef(null);
 
   return (
     <div className='container'>
-      <Navbar />
+      <Navbar
+        skillsRef={skillsRef}
+        servicesRef={servicesRef}
+        footerRef={footerRef}
+      />
       <div className='content'>
         <div className='text'>
           <h1 className='intro'>
@@ -29,16 +36,16 @@ export const Home = () => {
             innovative solutions that meet and exceed client expectations.
           </p>
           <button className='btnContact' onClick={handleShow}>
-            Lets Engage
+            Let's Connect
           </button>
         </div>
         <div className='homeImage'>
           <img className='image' src={bgImage} alt='welcome' />
         </div>
       </div>
-      <Services />
-      <Skills />
-      <Footer />
+      <Services elementRef={servicesRef} />
+      <Skills elementRef={skillsRef} />
+      <Footer elementRef={footerRef} />
       <Modal
         show={show}
         onHide={handleClose}

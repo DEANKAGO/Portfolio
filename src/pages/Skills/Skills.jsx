@@ -2,9 +2,9 @@ import React from 'react';
 import './skills.css';
 import { Container, Row, Col } from 'react-bootstrap';
 
-export const Skills = () => {
+export const Skills = ({ elementRef }) => {
   return (
-    <Container className='skillsContainer'>
+    <Container ref={elementRef} className='skillsContainer'>
       <div className='mt-5'>
         <div className='skillsHeader mb-5 p-2'>
           <h2 className=''>My Skills</h2>
