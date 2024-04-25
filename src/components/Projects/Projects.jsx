@@ -1,7 +1,9 @@
 import React from 'react';
 import './projects.css';
-import { Row, Col, Container, Card } from 'react-bootstrap';
+import { Row, Col, Container, Card, Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import { Footer } from '../Footer/Footer';
+import { projectsData } from '../../data/Data';
 
 export const Projects = () => {
   return (
@@ -11,182 +13,30 @@ export const Projects = () => {
           <h2>Projects</h2>
         </div>
         <Row md={4}>
-          <Col className='columnCard equal-height'>
-            <Card style={{ width: '20rem' }} className='content'>
-              <Card.Body className='projectsCardBody'>
-                <Card.Title className='projectsCardtitle'>
-                  Utibu Health Store
-                </Card.Title>
-                <Card.Text className='projectsCardtext'>
-                  <p>
-                    The iOS mobile app for Utibu Health enables registered
-                    customers to conveniently order their medication remotely
-                    and access their statement. Customers can browse through
-                    available medications, select the ones they need, and place
-                    orders directly from their smartphones.
-                  </p>
-                </Card.Text>
-                <Card.Text className='cardtext'>
-                  <strong>Technologies Used:</strong> React Native, TypeScript
-                  and JavaScript
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col className='columnCard equal-height'>
-            <Card style={{ width: '20rem' }} className='content'>
-              <Card.Body className='cardBody'>
-                <Card.Title className='cardtitle'>
-                  Utibu Health Store
-                </Card.Title>
-                <Card.Text className='cardtext'>
-                  <p>
-                    The iOS mobile app for Utibu Health enables registered
-                    customers to conveniently order their medication remotely
-                    and access their statement. Customers can browse through
-                    available medications, select the ones they need, and place
-                    orders directly from their smartphones.
-                  </p>
-                </Card.Text>
-                <Card.Text className='cardtext'>
-                  <strong>Technologies Used:</strong> React Native, TypeScript
-                  and JavaScript
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col className='columnCard equal-height'>
-            <Card style={{ width: '20rem' }} className='content'>
-              <Card.Body className='cardBody'>
-                <Card.Title className='cardtitle'>
-                  Utibu Health Store
-                </Card.Title>
-                <Card.Text className='cardtext'>
-                  <p>
-                    The iOS mobile app for Utibu Health enables registered
-                    customers to conveniently order their medication remotely
-                    and access their statement. Customers can browse through
-                    available medications, select the ones they need, and place
-                    orders directly from their smartphones.
-                  </p>
-                </Card.Text>
-                <Card.Text className='cardtext'>
-                  <strong>Technologies Used:</strong> React Native, TypeScript
-                  and JavaScript
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col className='columnCard equal-height'>
-            <Card style={{ width: '20rem' }} className='content'>
-              <Card.Body className='cardBody'>
-                <Card.Title className='cardtitle'>
-                  Utibu Health Store
-                </Card.Title>
-                <Card.Text className='cardtext'>
-                  <p>
-                    The iOS mobile app for Utibu Health enables registered
-                    customers to conveniently order their medication remotely
-                    and access their statement. Customers can browse through
-                    available medications, select the ones they need, and place
-                    orders directly from their smartphones.
-                  </p>
-                </Card.Text>
-                <Card.Text className='cardtext'>
-                  <strong>Technologies Used:</strong> React Native, TypeScript
-                  and JavaScript
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col className='columnCard equal-height'>
-            <Card style={{ width: '20rem' }} className='content'>
-              <Card.Body className='cardBody'>
-                <Card.Title className='cardtitle'>
-                  Utibu Health Store
-                </Card.Title>
-                <Card.Text className='cardtext'>
-                  <p>
-                    The iOS mobile app for Utibu Health enables registered
-                    customers to conveniently order their medication remotely
-                    and access their statement. Customers can browse through
-                    available medications, select the ones they need, and place
-                    orders directly from their smartphones.
-                  </p>
-                </Card.Text>
-                <Card.Text className='cardtext'>
-                  <strong>Technologies Used:</strong> React Native, TypeScript
-                  and JavaScript
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col className='columnCard equal-height'>
-            <Card style={{ width: '20rem' }} className='content'>
-              <Card.Body className='cardBody'>
-                <Card.Title className='cardtitle'>
-                  Utibu Health Store
-                </Card.Title>
-                <Card.Text className='cardtext'>
-                  <p>
-                    The iOS mobile app for Utibu Health enables registered
-                    customers to conveniently order their medication remotely
-                    and access their statement. Customers can browse through
-                    available medications, select the ones they need, and place
-                    orders directly from their smartphones.
-                  </p>
-                </Card.Text>
-                <Card.Text className='cardtext'>
-                  <strong>Technologies Used:</strong> React Native, TypeScript
-                  and JavaScript
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col className='columnCard equal-height'>
-            <Card style={{ width: '20rem' }} className='content'>
-              <Card.Body className='cardBody'>
-                <Card.Title className='cardtitle'>
-                  Utibu Health Store
-                </Card.Title>
-                <Card.Text className='cardtext'>
-                  <p>
-                    The iOS mobile app for Utibu Health enables registered
-                    customers to conveniently order their medication remotely
-                    and access their statement. Customers can browse through
-                    available medications, select the ones they need, and place
-                    orders directly from their smartphones.
-                  </p>
-                </Card.Text>
-                <Card.Text className='cardtext'>
-                  <strong>Technologies Used:</strong> React Native, TypeScript
-                  and JavaScript
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col className='columnCard equal-height'>
-            <Card style={{ width: '20rem' }} className='content'>
-              <Card.Body className='cardBody'>
-                <Card.Title className='cardtitle'>
-                  Utibu Health Store
-                </Card.Title>
-                <Card.Text className='cardtext'>
-                  <p>
-                    The iOS mobile app for Utibu Health enables registered
-                    customers to conveniently order their medication remotely
-                    and access their statement. Customers can browse through
-                    available medications, select the ones they need, and place
-                    orders directly from their smartphones.
-                  </p>
-                </Card.Text>
-                <Card.Text className='cardtext'>
-                  <strong>Technologies Used:</strong> React Native, TypeScript
-                  and JavaScript
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </Col>
+          {projectsData.map((item) => (
+            <Col key={item.id} className='columnCard equal-height'>
+              <Card style={{ width: '20rem' }} className='content'>
+                <Card.Body className='projectsCardBody d-flex flex-column'>
+                  <Card.Title className='projectsCardtitle'>
+                    {item.name}
+                  </Card.Title>
+                  <Card.Text className='projectsCardtext'>
+                    <p>{item.about}</p>
+                  </Card.Text>
+                  <div className='mt-auto'>
+                    <Card.Text className='cardtextTech'>
+                      <strong>Technologies Used:</strong> {item.technology}
+                    </Card.Text>
+                    <Card.Footer className='bg-white cardFooter'>
+                      <a className='' href={item.link} target='blank'>
+                        <Button variant='primary'>View Repository</Button>
+                      </a>
+                    </Card.Footer>
+                  </div>
+                </Card.Body>
+              </Card>
+            </Col>
+          ))}
         </Row>
       </div>
       <div className='line m-5'>

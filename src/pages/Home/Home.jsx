@@ -26,7 +26,7 @@ export const Home = () => {
           <button className='btnContact'>Lets Engage</button>
         </div>
         <div className='homeImage'>
-          <img className='image' src={bgImage} />
+          <img className='image' src={bgImage} alt='welcome' />
         </div>
       </div>
       <Services />
