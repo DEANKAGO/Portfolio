@@ -220,3 +220,60 @@ export const myServices = [
     ),
   },
 ];
+
+export const softSkillsData = [
+  {
+    id: 1,
+    header: 'Problem-Solving and Troubleshooting:',
+    desc: 'I have the ability to identify and solve technical problems efficiently.',
+  },
+  {
+    id: 2,
+    header: 'Communication and Collaboration:',
+    desc: 'I have strong communication skills and the ability to work effectively in a team environment.',
+  },
+  {
+    id: 3,
+    header: 'Agile Methodologies:',
+    desc: 'I am familiar with Agile development methodologies such as Scrum.',
+  },
+  {
+    id: 4,
+    header: 'Testing:',
+    desc: 'Understanding of software testing principles and experience with testing frameworks.',
+  },
+  {
+    id: 5,
+    header: 'Version Control:',
+    desc: 'I am proficient in using version control systems like Git for managing code repositories and collaborating with other developers.',
+  },
+];
+
+export const skillsData = [
+  {
+    id: 1,
+    header: 'RESTful APIs:',
+    desc: 'Ability to design and build RESTful APIs to facilitate communication between the front-end and back-end of web applications.',
+  },
+  {
+    id: 2,
+    header: 'Data Stractures and Algorithms:',
+    desc: 'Ability to optimize code performance, solve complex problems efficiently, build scalable systems, maintain clean and reusable code',
+  },
+
+  {
+    id: 3,
+    header: 'Deployment Tools:',
+    desc: 'Knowledge of deployment tools such as Docker, Kubernetes, or Heroku for containerization and deploying applications to production environments.',
+  },
+  {
+    id: 4,
+    header: 'Database Management:',
+    desc: 'Familiarity with relational databases (e.g., MySQL, PostgreSQL) and NoSQL databases (e.g., MongoDB) and their query languages.',
+  },
+  {
+    id: 5,
+    header: 'Responsive Design:',
+    desc: 'Ability to create websites and applications that work well on different devices and screen sizes.',
+  },
+];

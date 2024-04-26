@@ -27,23 +27,24 @@ export const Navbar = ({ servicesRef, skillsRef, footerRef }) => {
         <ul>
           <li>
             <Link to='/'>
-              <a href='home'>Home</a>
+              <a href='#'>Home</a>
             </Link>
           </li>
           <li>
-            <a href='services' onClick={scrollToServices}>
+            <a href='#' onClick={scrollToServices}>
               Services
+            </a>
+          </li>
+
+          <li>
+            <a href='#' onClick={scrollToSkills}>
+              Skills
             </a>
           </li>
           <li>
             <Link to='/projects'>
-              <a href='projects'>Projects</a>
+              <a href='#'>Projects</a>
             </Link>
-          </li>
-          <li>
-            <a href='skills' onClick={scrollToSkills}>
-              Skills
-            </a>
           </li>
         </ul>
       </div>
