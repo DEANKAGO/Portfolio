@@ -9,7 +9,6 @@ import { projectsData } from '../../data/Data';
 export const Projects = () => {
   return (
     <Container className='projectsContainer'>
-      <Navbar />
       <div className='projectsContent' mt-5>
         <div className='projectsHeader'>
           <h2>Projects</h2>
