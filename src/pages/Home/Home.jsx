@@ -11,6 +11,7 @@ export const Home = () => {
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+  
   const skillsRef = useRef(null);
   const servicesRef = useRef(null);
   const footerRef = useRef(null);

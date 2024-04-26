@@ -179,7 +179,7 @@ export const myServices = [
   },
   {
     id: 4,
-    photo: require('../images/backend.jpg'),
+    photo: require('../images/web.jpg'),
     name: 'Web Design',
     languages: ['Figma'],
     header: 'Web Design',

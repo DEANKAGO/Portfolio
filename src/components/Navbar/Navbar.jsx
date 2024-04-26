@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import './navbar.css';
 import Logo from '../../images/logo.jpg';
 import { Link } from 'react-router-dom';
@@ -12,35 +12,45 @@ export const Navbar = ({ servicesRef, skillsRef, footerRef }) => {
     skillsRef.current?.scrollIntoView({ behavior: 'smooth' });
   };
 
+  const scrollToFooter = () => {
+    footerRef.current?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <nav>
       <div className=''>
         <Link to='/'>
-          <img className='logo' src={Logo} />
+          <img className='logo' src={Logo} alt='logo' />
         </Link>
       </div>
       <div className='menuContainer'>
         <ul>
           <li>
             <Link to='/'>
-              <a>Home</a>
+              <a href='home'>Home</a>
             </Link>
           </li>
           <li>
-            <a onClick={scrollToServices}>Services</a>
+            <a href='services' onClick={scrollToServices}>
+              Services
+            </a>
           </li>
           <li>
             <Link to='/projects'>
-              <a>Projects</a>
+              <a href='projects'>Projects</a>
             </Link>
           </li>
           <li>
-            <a onClick={scrollToSkills}>Skills</a>
+            <a href='skills' onClick={scrollToSkills}>
+              Skills
+            </a>
           </li>
         </ul>
       </div>
       <div className='btnContainer'>
-        <button className='btnContact'>Contact Me</button>
+        <button className='btnContact' onClick={scrollToFooter}>
+          Contact Me
+        </button>
       </div>
     </nav>
   );
