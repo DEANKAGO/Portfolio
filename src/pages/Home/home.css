@@ -66,3 +66,105 @@
 .modalHeader {
     font-family: Alice;
 }
+
+@media screen and (max-width: 1400px) {
+    .image {
+        height: 50vh;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .content h1 {
+        font-size: 30px;
+    }
+    .content h3 {
+        font-size: 22px;
+    }
+   
+}
+
+@media screen and (max-width: 995px) {
+    .image {
+        height: 40vh;
+        max-width: 45vh;
+        margin: 0;
+    }
+    .content h1 {
+        font-size: 20px;
+    }
+    .content h3 {
+        font-size: 18px;
+    }
+    .text p {
+        font-size: 14px;
+    }
+    .homeImage {
+        margin: 0;
+        padding: 0;
+    }
+    .btnContact {
+        font-size: 10px;
+        margin-bottom: 10px;
+    }
+    .content {      
+        justify-content: space-around;
+    }  
+}
+
+@media screen and (max-width: 770px) {
+    .image {
+        height: 30vh;
+        max-width: 35vh;
+        margin: 0;
+    }
+    .content h1 {
+        font-size: 15px;
+    }
+    .content h3 {
+        font-size: 14px;
+    }
+    .text p {
+        font-size: 10px;
+    }
+    .btnContact {
+        font-size: 8px;
+        margin-bottom: 10px;
+    }
+    
+}
+@media screen and (max-width: 550px) {
+    .content {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 4%;
+    }
+    .text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        order: 2;
+        width: 70%;
+        text-align: center;
+    }
+    .text p {
+        font-size: 12px;
+        padding-top: 5px;
+    }
+    .homeImage {
+        order: 1;
+    }
+    .content h1 {
+        font-size: 20px;
+        width: 80%;
+        text-align: center;
+    }
+    .content h3 {
+        font-size: 14px;
+    }
+    .image {
+        height: 30vh;
+        max-width: 50vh;
+        margin: 0;
+    }
+}
