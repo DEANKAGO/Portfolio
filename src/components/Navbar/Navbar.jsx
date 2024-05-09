@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './navbar.css';
 import Logo from '../../images/logo.jpg';
 import { Link } from 'react-router-dom';
+import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
 
 export const Navbar = ({ servicesRef, skillsRef, footerRef }) => {
   const scrollToServices = () => {
@@ -16,6 +17,8 @@ export const Navbar = ({ servicesRef, skillsRef, footerRef }) => {
     footerRef.current?.scrollIntoView({ behavior: 'smooth' });
   };
 
+  const [toggleMenu, setToggleMenu] = useState(false);
+
   return (
     <nav>
       <div className=''>
@@ -27,23 +30,23 @@ export const Navbar = ({ servicesRef, skillsRef, footerRef }) => {
         <ul>
           <li>
             <Link to='/'>
-              <a href='#'>Home</a>
+              <a href='linkToHome'>Home</a>
             </Link>
           </li>
           <li>
-            <a href='#' onClick={scrollToServices}>
+            <a href='linkToServices' onClick={scrollToServices}>
               Services
             </a>
           </li>
 
           <li>
-            <a href='#' onClick={scrollToSkills}>
+            <a href='linkToSkills' onClick={scrollToSkills}>
               Skills
             </a>
           </li>
           <li>
             <Link to='/projects'>
-              <a href='#'>Projects</a>
+              <a href='linkToProjects'>Projects</a>
             </Link>
           </li>
         </ul>
@@ -52,6 +55,55 @@ export const Navbar = ({ servicesRef, skillsRef, footerRef }) => {
         <button className='btnContact' onClick={scrollToFooter}>
           Contact Me
         </button>
+      </div>
+      <div className='navbarMenu'>
+        {toggleMenu ? (
+          <RiCloseLine
+            color='#fff'
+            size={27}
+            onClick={() => setToggleMenu(false)}
+          />
+        ) : (
+          <RiMenu3Line
+            color='#fff'
+            size={27}
+            onClick={() => setToggleMenu(true)}
+          />
+        )}
+        {toggleMenu && (
+          <div className='navbarMenuContainerToggle scale-up-center'>
+            <div className='navbarMenuContainerLinks'>
+              <ul>
+                <li>
+                  <Link to='/'>
+                    <a href='linkToHome'>Home</a>
+                  </Link>
+                </li>
+                <li>
+                  <a href='linkToServices' onClick={scrollToServices}>
+                    Services
+                  </a>
+                </li>
+
+                <li>
+                  <a href='linkToSkills' onClick={scrollToSkills}>
+                    Skills
+                  </a>
+                </li>
+                <li>
+                  <Link to='/projects'>
+                    <a href='linkToProjects'>Projects</a>
+                  </Link>
+                </li>
+              </ul>
+            </div>
+            <div className='btnContainerMenu'>
+              <button className='btnContactMenu' onClick={scrollToFooter}>
+                Contact Me
+              </button>
+            </div>
+          </div>
+        )}
       </div>
     </nav>
   );

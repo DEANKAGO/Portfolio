@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import './services.css';
 import { Container, Row, Col, Card, Button, Image } from 'react-bootstrap';
 import { myServices } from '../../data/Data';

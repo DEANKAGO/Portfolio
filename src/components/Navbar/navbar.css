@@ -54,3 +54,93 @@ nav li a:hover {
   font-weight: 500;
   cursor: pointer;
 }
+
+.navbarMenu {
+  display: none;
+  align-items: center;
+  cursor: pointer;
+}
+
+.navbarMenuContainerLinks ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbarMenuContainerLinks ul li {
+  margin-bottom: 10px;
+}
+
+.navbarMenuContainerLinks ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.btnContainer {
+  margin-top: 20px;
+}
+
+.btnContact {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media  screen and (max-width: 770px) {
+  .navbarMenu {
+    display: flex;
+  }
+
+  .btnContainer{
+    display: none;
+  }
+
+  .menuContainer {
+    display: none;
+  };
+
+  .navbarMenuContainerToggle {
+    width: 100%; 
+    padding: 10px;
+  }
+
+  .navbarMenuContainerLinks ul li {
+    margin-bottom: 4px;
+  }
+
+  .navbarMenuContainerToggle {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: #333;
+    position: absolute;
+    top: 50px; 
+    right: 0;
+    width: 150px; 
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  .btnContactMenu {
+    padding: 5px 10px;
+    margin-top: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+  }
+
+  .navbarMenuContainerLinks ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 12px;
+  }
+  
+
+}
