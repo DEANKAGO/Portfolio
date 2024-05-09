@@ -1,7 +1,6 @@
 import React, { useState, useRef } from 'react';
 import './home.css';
 import { Navbar } from '../../components/Navbar/Navbar';
-import bgImage from '../../images/portfolio.jpg';
 import { Services } from '../Services/Services';
 import { Skills } from '../Skills/Skills';
 import { Footer } from '../../components/Footer/Footer';
@@ -23,25 +22,34 @@ export const Home = () => {
         servicesRef={servicesRef}
         footerRef={footerRef}
       />
-      <div className='content'>
-        <div className='text'>
-          <h1 className='intro'>
-            Welcome to my portfolio! <br />
-            <span className='span'>I'm Martin Kago Muchai</span>
-          </h1>
-          <h3 className='intro'>A passionate software engineer</h3>
-          <p className='contentP'>
-            I specialize in full-stack development, mobile app development,
-            frontend development and backend development. My goal is to leverage
-            my technical expertise and problem-solving skills to deliver
-            innovative solutions that meet and exceed client expectations.
-          </p>
-          <button className='btnContact' onClick={handleShow}>
-            Let's Connect
-          </button>
-        </div>
-        <div className='homeImage'>
-          <img className='image' src={bgImage} alt='welcome' />
+      <div className='contentContainer'>
+        <div className='content'>
+          <div className='text'>
+            <h1 className='intro'>
+              Welcome to my portfolio! <br />
+              <span className='span'>I'm Martin Kago Muchai</span>
+            </h1>
+            <h3 className='intro'>A passionate software engineer</h3>
+            <p className='contentP'>
+              I specialize in full-stack development, mobile app development,
+              frontend development and backend development. My goal is to
+              leverage my technical expertise and problem-solving skills to
+              deliver innovative solutions that meet and exceed client
+              expectations.
+            </p>
+            <button className='btnContact' onClick={handleShow}>
+              Let's Connect
+            </button>
+          </div>
+          <div className='homeImage'>
+            {/* <img className='image' src={bgImage} alt='welcome' /> */}
+            <div class='sky'>
+              <div class='star'></div>
+              <div class='planet'>
+                <div class='satellite'></div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <Services elementRef={servicesRef} />

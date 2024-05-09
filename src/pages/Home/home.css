@@ -6,22 +6,25 @@
     background-color: #201F1F;
 }
 
+.contentContainer {
+    display: flex;
+    justify-content: center;
+
+}
+
 .content {
-    margin-top: 8%;
+    margin-top: 5%;
+    margin-bottom: 5%;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     color: #000000;
+    padding: 20px;
 }  
 
-.image {
-    margin-top: 50px;
-    height: 60vh;
-}
-
 .text {
-    width: 40%;
+    width: 50%;
 }
 
 .content h1 {
@@ -63,6 +66,95 @@
 .contactList li {
     font-family: Alice;
 }
+.homeImage {
+    margin: 0;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #201F1F;
+    overflow: hidden;
+    width: 50%;
+}
+
+
+.sky {
+    font-size: 10px;
+    width: 40em;
+    height: 40em;
+    position: relative;
+}
+
+.star {
+    position: absolute;
+    top: 15em;
+    left: 15em;
+    width: 10em;
+    height: 10em;
+    background: rgb(242, 253, 41);
+    background: linear-gradient(90deg, rgba(242, 253, 41, 1) 0%, rgba(251, 147, 35, 1) 81%, rgba(251, 147, 35, 1) 100%);
+    border-radius: 50%;
+    box-shadow: 0 0 3em white;
+}
+
+.planet,
+.satellite {
+    position: absolute;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+    border-width: 0.1em 0.1em 0 0;
+    border-radius: 50%;
+}
+
+.planet {
+    top: 5em;
+    left: 5em;
+    width: 30em;
+    height: 30em;
+    animation: orbit 36.5s linear infinite;
+}
+
+.satellite {
+    top: 0;
+    right: 0;
+    width: 8em;
+    height: 8em;
+    animation: orbit 2.7s linear infinite;
+}
+
+.planet::before,
+.satellite::before {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+}
+
+.planet::before {
+    top: 2.8em;
+    right: 2.8em;
+    width: 3em;
+    height: 3em;
+    background: rgb(34, 193, 195);
+    background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+}
+
+.satellite::before {
+    top: 0.8em;
+    right: 0.2em;
+    width: 1.2em;
+    height: 1.2em;
+    background-color: silver;
+}
+
+@keyframes orbit {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
 .modalHeader {
     font-family: Alice;
 }
@@ -75,21 +167,38 @@
 }
 
 @media screen and (max-width: 1200px) {
+    .content {
+        width: 100%;
+    }
     .content h1 {
         font-size: 30px;
     }
     .content h3 {
         font-size: 22px;
     }
+    .homeImage {
+        height: 50vh;
+    }
+    .planet {    
+        top: 5em;
+        left: 5em;
+        width: 30em;
+        height: 30em;
+        animation: orbit 36.5s linear infinite;
+    }
+    .sky {
+        font-size: 6px;
+        width: 40em;
+        height: 40em;
+        position: relative;
+    }
+    
+   
+    
    
 }
 
 @media screen and (max-width: 995px) {
-    .image {
-        height: 40vh;
-        max-width: 45vh;
-        margin: 0;
-    }
     .content h1 {
         font-size: 20px;
     }
@@ -99,10 +208,7 @@
     .text p {
         font-size: 14px;
     }
-    .homeImage {
-        margin: 0;
-        padding: 0;
-    }
+    
     .btnContact {
         font-size: 10px;
         margin-bottom: 10px;
@@ -113,11 +219,6 @@
 }
 
 @media screen and (max-width: 770px) {
-    .image {
-        height: 35vh;
-        max-width: 30vh;
-        margin: 0;
-    }
     .content h1 {
         font-size: 15px;
     }
@@ -131,8 +232,25 @@
         font-size: 8px;
         margin-bottom: 10px;
     }
+    .homeImage {
+        height: 40vh;
+    }
+    .planet {    
+        top: 5em;
+        left: 5em;
+        width: 30em;
+        height: 30em;
+        animation: orbit 36.5s linear infinite;
+    }
+    .sky {
+        font-size: 5px;
+        width: 40em;
+        height: 40em;
+        position: relative;
+    }
     
 }
+
 @media screen and (max-width: 550px) {
     .content {
         flex-direction: column;
@@ -162,9 +280,22 @@
     .content h3 {
         font-size: 14px;
     }
-    .image {
-        height: 30vh;
-        max-width: 50vh;
-        margin: 0;
+
+    .homeImage {
+        height: 40vh;
+        width: 100%;
+    }
+    .planet {    
+        top: 5em;
+        left: 5em;
+        width: 30em;
+        height: 30em;
+        animation: orbit 36.5s linear infinite;
+    }
+    .sky {
+        font-size: 5px;
+        width: 40em;
+        height: 40em;
+        position: relative;
     }
 }

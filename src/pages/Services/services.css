@@ -28,45 +28,45 @@
     font-weight: 400;
     line-height: normal;
 }
-.img {
+.serviceImg {
     height: 20vh;
     width: 20vh;
 }
-.cardtitle {
+.serviceCardtitle {
     font-family: Alice;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     text-align: center;
 }
-.cardContainer {
+.serviceCardContainer {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 3vh;
     margin-bottom: 3vh;
 }
-.columnCard {
+.servicecolumnCard {
     display: flex;
-
+    text-align: center;
 }
 
 .equal-height {
 flex-grow: 1;
 }
 
-.cardBody {
+.serviceCardBody {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
 }
-.languages {
+.serviceLanguages {
     list-style-type: none;
     width: 100%;
     text-align: center;
     padding: 0;
 }
-.languages li {
+.serviceLanguages li {
 display: flex;
 margin: 10px 10px;
 justify-content: center;
@@ -74,17 +74,17 @@ color: #959595;
 }
 
 @media  screen and (max-width: 995px) {
-    .img {
+    .serviceImg {
         height: 10vh;
         width: 10vh;
     }
 
-    .cardtitle {
+    .serviceCardtitle {
         font-size: 15px !important;
         
     }
 
-    .languages li {
+    .serviceLanguages li {
         display: flex;
         margin: 10px 10px;
         justify-content: center;
@@ -92,8 +92,13 @@ color: #959595;
         font-size: 12px;
     }
 
-    .cardButton {
+    .serviceCardButton {
         font-size: 12px !important;
+    }
+    .servicecolumnCard {
+        float: left !important;
+        width: 50% !important;
+        margin-bottom: 20px;
     }
 
 }
@@ -112,10 +117,27 @@ color: #959595;
         margin-bottom: 0;
     }
 
-    .columnCard {
+    
+}
+
+@media  screen and (max-width: 500px) {
+    .serviceRow {
+        display: flex !important;
+        flex-direction: column;
+        align-items: center;
+    }
+    .servicecolumnCard {
+        width: 100% !important;
         display: flex;
         justify-content: center;
+
     }
+    .serviceContent {
+        width: 80% !important;
+    }
+
 }
+
+
 
  

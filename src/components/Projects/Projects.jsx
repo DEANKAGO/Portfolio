@@ -28,7 +28,7 @@ export const Projects = () => {
                     </Card.Text>
                     <Card.Footer className='bg-white cardFooter'>
                       <a className='' href={item.link} target='blank'>
-                        <Button variant='primary'>View Repository</Button>
+                        <Button className='projectsCardButton' variant='primary'>View Repository</Button>
                       </a>
                     </Card.Footer>
                   </div>

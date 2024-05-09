@@ -13,20 +13,20 @@ export const Services = ({ elementRef }) => {
         </div>
         <Row md={4} className='serviceRow'>
           {myServices.map((service) => (
-            <Col className='columnCard equal-height'>
-              <Card style={{ width: '18rem' }} className='content'>
-                <div className='cardContainer'>
+            <Col className='servicecolumnCard equal-height'>
+              <Card style={{ width: '18rem' }} className='serviceContent'>
+                <div className='serviceCardContainer'>
                   <Image
                     src={service?.photo}
-                    className='img'
+                    className='serviceImg'
                     roundedCircle
                     alt='backend logo'
                   />
                 </div>
-                <Card.Body className='cardBody'>
-                  <Card.Title className='cardtitle'>{service?.name}</Card.Title>
+                <Card.Body className='serviceCardBody'>
+                  <Card.Title className='serviceCardtitle'>{service?.name}</Card.Title>
                   <Card.Text>
-                    <ul className='languages'>
+                    <ul className='serviceLanguages'>
                       {service.languages.map((language) => (
                         <li>{language}</li>
                       ))}
@@ -35,7 +35,7 @@ export const Services = ({ elementRef }) => {
                 </Card.Body>
                 <Card.Footer className='bg-white'>
                   <Link to={`/about/${service.id}`}>
-                    <Button className='cardButton' variant='primary'>
+                    <Button className='serviceCardButton' variant='primary'>
                       Learn More
                     </Button>
                   </Link>
