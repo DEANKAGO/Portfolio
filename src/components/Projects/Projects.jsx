@@ -11,7 +11,7 @@ export const Projects = () => {
         <div className='projectsHeader'>
           <h2>Projects</h2>
         </div>
-        <Row md={4}>
+        <Row md={4} className='projectsRow'>
           {projectsData.map((item) => (
             <Col key={item.id} className='columnCard equal-height'>
               <Card style={{ width: '20rem' }} className='content'>

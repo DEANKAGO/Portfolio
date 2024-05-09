@@ -37,3 +37,5 @@
 .footer ul li {
     color: #959595;
 }
+
+@media  screen and (max-width: 570px) {};
