@@ -17,6 +17,7 @@
     justify-content: center;
     align-items: center;
     padding: 30px;
+    margin-bottom: 30px;
 }
 
 .servicesHeader h2 {
@@ -36,6 +37,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    text-align: center;
 }
 .cardContainer {
     display: flex;
@@ -61,7 +63,7 @@ flex-grow: 1;
 .languages {
     list-style-type: none;
     width: 100%;
-    text-align: left;
+    text-align: center;
     padding: 0;
 }
 .languages li {
@@ -69,6 +71,51 @@ display: flex;
 margin: 10px 10px;
 justify-content: center;
 color: #959595;
+}
+
+@media  screen and (max-width: 995px) {
+    .img {
+        height: 10vh;
+        width: 10vh;
+    }
+
+    .cardtitle {
+        font-size: 15px !important;
+        
+    }
+
+    .languages li {
+        display: flex;
+        margin: 10px 10px;
+        justify-content: center;
+        color: #959595;
+        font-size: 12px;
+    }
+
+    .cardButton {
+        font-size: 12px !important;
+    }
+
+}
+
+@media  screen and (max-width: 770px) {
+    .servicesHeader h2 {
+        color: #ffffff;
+        font-family: Alice;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .servicesHeader  {
+        margin-bottom: 0;
+    }
+
+    .columnCard {
+        display: flex;
+        justify-content: center;
+    }
 }
 
  

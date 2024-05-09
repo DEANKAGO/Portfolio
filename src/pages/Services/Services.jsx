@@ -8,7 +8,7 @@ export const Services = ({ elementRef }) => {
   return (
     <Container ref={elementRef} className='serviceContainer'>
       <div className=''>
-        <div className='servicesHeader mb-5'>
+        <div className='servicesHeader'>
           <h2 className=''>My Services</h2>
         </div>
         <Row md={4} className='serviceRow'>
@@ -35,7 +35,9 @@ export const Services = ({ elementRef }) => {
                 </Card.Body>
                 <Card.Footer className='bg-white'>
                   <Link to={`/about/${service.id}`}>
-                    <Button variant='primary'>Learn More</Button>
+                    <Button className='cardButton' variant='primary'>
+                      Learn More
+                    </Button>
                   </Link>
                 </Card.Footer>
               </Card>
