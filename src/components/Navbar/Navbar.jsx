@@ -30,23 +30,23 @@ export const Navbar = ({ servicesRef, skillsRef, footerRef }) => {
         <ul>
           <li>
             <Link to='/'>
-              <a href='linkToHome'>Home</a>
+              <a href='#'>Home</a>
             </Link>
           </li>
           <li>
-            <a href='linkToServices' onClick={scrollToServices}>
+            <a href='#' onClick={scrollToServices}>
               Services
             </a>
           </li>
 
           <li>
-            <a href='linkToSkills' onClick={scrollToSkills}>
+            <a href='#' onClick={scrollToSkills}>
               Skills
             </a>
           </li>
           <li>
             <Link to='/projects'>
-              <a href='linkToProjects'>Projects</a>
+              <a href='#'>Projects</a>
             </Link>
           </li>
         </ul>
@@ -76,17 +76,17 @@ export const Navbar = ({ servicesRef, skillsRef, footerRef }) => {
               <ul>
                 <li>
                   <Link to='/'>
-                    <a href='linkToHome'>Home</a>
+                    <a href='#'>Home</a>
                   </Link>
                 </li>
                 <li>
-                  <a href='linkToServices' onClick={scrollToServices}>
+                  <a href='#' onClick={scrollToServices}>
                     Services
                   </a>
                 </li>
 
                 <li>
-                  <a href='linkToSkills' onClick={scrollToSkills}>
+                  <a href='#' onClick={scrollToSkills}>
                     Skills
                   </a>
                 </li>
