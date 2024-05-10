@@ -42,7 +42,6 @@ export const Home = () => {
             </button>
           </div>
           <div className='homeImage'>
-            {/* <img className='image' src={bgImage} alt='welcome' /> */}
             <div class='sky'>
               <div class='star'></div>
               <div class='planet'>

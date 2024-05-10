@@ -59,7 +59,6 @@
 }
 .columnCard {
     display: flex;
-    text-align: center;
 }
 .equal-height {
     flex-grow: 1;

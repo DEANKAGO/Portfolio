@@ -27,18 +27,18 @@
     width: 50%;
 }
 
-.content h1 {
+.text h1 {
     color: #ffffff;
     font-family: Alice;
-    font-size: 40px;
+    font-size: 45px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
 }
-.content h3 {
+.text h3 {
     color: #ffffff;
     font-family: Alice;
-    font-size: 30px;
+    font-size: 25px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -47,9 +47,10 @@
 .span {
     color: #ffffff;
     font-family: Alice;
+    font-size: 38px;
 }
 
-.content P {
+.text P {
     color: #959595;
     font-size: 16px;
     font-style: normal;
@@ -170,11 +171,14 @@
     .content {
         width: 100%;
     }
-    .content h1 {
+    .text h1 {
+        font-size: 35px;
+    }
+    .span {
         font-size: 30px;
     }
-    .content h3 {
-        font-size: 22px;
+    .text h3 {
+        font-size: 25px;
     }
     .homeImage {
         height: 50vh;
@@ -199,11 +203,14 @@
 }
 
 @media screen and (max-width: 995px) {
-    .content h1 {
-        font-size: 20px;
+    .text h1 {
+        font-size: 28px;
     }
-    .content h3 {
-        font-size: 18px;
+    .text h3 {
+        font-size: 19px;
+    }
+    .span {
+        font-size: 24px;
     }
     .text p {
         font-size: 14px;
@@ -219,10 +226,16 @@
 }
 
 @media screen and (max-width: 770px) {
-    .content h1 {
-        font-size: 15px;
+    .content {
+        padding: 0;
     }
-    .content h3 {
+    .text h1 {
+        font-size: 20px;
+    }
+    .span {
+        font-size: 16px;
+    }
+    .text h3 {
         font-size: 14px;
     }
     .text p {
@@ -256,13 +269,14 @@
         flex-direction: column;
         text-align: center;
         margin-top: 4%;
+        padding: 0;
     }
     .text {
         display: flex;
         flex-direction: column;
         align-items: center;
         order: 2;
-        width: 70%;
+        width: 100%;
         text-align: center;
     }
     .text p {
@@ -272,12 +286,15 @@
     .homeImage {
         order: 1;
     }
-    .content h1 {
+    .intro {
+        width: 100%;
+    }
+    .text h1 {
         font-size: 20px;
-        width: 80%;
+        width: 100%;
         text-align: center;
     }
-    .content h3 {
+    .text h3 {
         font-size: 14px;
     }
 
@@ -297,5 +314,11 @@
         width: 40em;
         height: 40em;
         position: relative;
+    }
+    .text h1 {
+        font-size: 22px
+    }
+    .span {
+        font-size: 17px;
     }
 }
