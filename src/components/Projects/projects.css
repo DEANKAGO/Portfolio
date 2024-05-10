@@ -31,17 +31,22 @@
     flex-direction: column;
     justify-content: flex-start;
 }
-.projectsCardtitle {
+.projectsCardtitle h2 {
     font-family: Alice;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     display: flex;
     justify-content: center;
+    font-size: 20px;
 }
 .projectsCardtext p {
     display: flex;
     justify-content: center;
+    font-size: 13px;
+}
+.projectsCardtext {
+    margin-top: 5%;
 }
 .sp {
     width: 70%;
@@ -52,6 +57,9 @@
     display: flex;
     justify-content: center;
 
+}
+.cardtextTech {
+    font-size: 14px;
 }
 .cardFooter {
     display: flex;
@@ -67,15 +75,15 @@
 
 @media  screen and (max-width: 1300px) {
     
-    .projectsCardtitle {
-        font-size: 25px !important;
+    .projectsCardtitle h1 {
+        font-size: 25px;
         
     }
 
     .projectsCardtext p {
         display: flex;
         justify-content: center;
-        font-size: 16px;
+        font-size: 13px;
     }
 
     .projectsCardButton {
@@ -103,11 +111,11 @@
         width: 100% !important;
         display: flex;
         justify-content: center;
-        margin-bottom: 0;
+        margin-bottom: 20px;
 
     }
     .content {
-        width: 80% !important;
+        width: 100% !important;
     }
     .projectsHeader h2 {
         font-size: 30px;

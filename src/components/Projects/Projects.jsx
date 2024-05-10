@@ -17,7 +17,7 @@ export const Projects = () => {
               <Card style={{ width: '20rem' }} className='content'>
                 <Card.Body className='projectsCardBody d-flex flex-column'>
                   <Card.Title className='projectsCardtitle'>
-                    {item.name}
+                    <h2>{item.name}</h2>
                   </Card.Title>
                   <Card.Text className='projectsCardtext'>
                     <p>{item.about}</p>
