@@ -23,7 +23,7 @@ export const Home = () => {
         footerRef={footerRef}
       />
       <div className='contentContainer'>
-        <div className='content'>
+        <div className='homeContent'>
           <div className='text'>
             <h1 className='intro'>
               Welcome to my portfolio! <br />

@@ -53,6 +53,11 @@ nav li a:hover {
   color: #ffffff;
   font-weight: 500;
   cursor: pointer;
+  position: relative; 
+  transition: transform 0.3s ease; 
+}
+.btnContact:hover {
+  transform: scale(1.10);
 }
 
 .navbarMenu {

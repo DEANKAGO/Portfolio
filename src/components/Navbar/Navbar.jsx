@@ -53,7 +53,7 @@ export const Navbar = ({ servicesRef, skillsRef, footerRef }) => {
       </div>
       <div className='btnContainer'>
         <button className='btnContact' onClick={scrollToFooter}>
-          Contact Me
+          Hire Me
         </button>
       </div>
       <div className='navbarMenu'>
