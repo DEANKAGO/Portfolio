@@ -43,3 +43,55 @@
     justify-content: center;
 
 }
+
+@media  screen and (max-width: 770px) {
+    .aboutHeader h2 {
+        color: #ffffff;
+        font-family: Alice;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    .explain p {
+        color: #959595;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        padding-top: 20px;
+        width: 100%;
+    }
+}
+
+@media  screen and (max-width: 500px) {
+    .aboutHeader h2 {
+        color: #ffffff;
+        font-family: Alice;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    .explain p {
+        color: #959595;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        padding-top: 20px;
+        width: 100%;
+    }
+    
+}
+
+@media  screen and (max-width: 350px) {
+    .aboutHeader h2 {
+        color: #ffffff;
+        font-family: Alice;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+}

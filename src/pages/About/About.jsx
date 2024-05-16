@@ -14,7 +14,7 @@ export const About = () => {
     <Container className='aboutContainer'>
       <Navbar />
       <div className='mt-5'>
-        <div className='aboutHeader mb-5 p-2'>
+        <div className='aboutHeader mb-3 p-2'>
           <h2 className=''>{service?.header}</h2>
         </div>
         <div className='explain'>{service?.desc}</div>
