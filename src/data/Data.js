@@ -89,7 +89,14 @@ export const myServices = [
     id: 2,
     photo: require('../images/front.jpg'),
     name: 'Web Developer',
-    languages: ['React.Js', 'Tailwind-CSS', 'Typescript', 'Html & CSS'],
+    languages: [
+      'React.Js',
+      'Angular',
+      'Tailwind-CSS',
+      'Typescript',
+      'JavaScript',
+      'Html & CSS',
+    ],
     header: 'Web Development',
     desc: (
       <p>
@@ -131,7 +138,7 @@ export const myServices = [
     id: 3,
     photo: require('../images/mobile.jpg'),
     name: 'Mobile Developer',
-    languages: ['React Native', 'Ios', 'Android'],
+    languages: ['React Native', 'TypeScript', 'JavaScript', 'Ios', 'Android'],
     header: 'Mobile Development',
     desc: (
       <p>
