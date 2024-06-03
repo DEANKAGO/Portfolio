@@ -1,5 +1,5 @@
 import './App.css';
-import { Container, Navbar } from 'react-bootstrap';
+import { Navbar } from 'react-bootstrap';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Home } from './pages/Home/Home';
 import { Services } from './pages/Services/Services';
@@ -9,7 +9,7 @@ import { Projects } from './components/Projects/Projects';
 
 function App() {
   return (
-    <Container>
+    <div id='bg_container'>
       <Router>
         <Navbar />
         <Routes>
@@ -20,7 +20,7 @@ function App() {
           <Route exact path='/projects' element={<Projects />} />
         </Routes>
       </Router>
-    </Container>
+    </div>
   );
 }
 

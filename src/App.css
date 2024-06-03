@@ -6,3 +6,9 @@
   box-sizing: border-box;
   font-family:'Inter', sans-serif;
 }
+
+#bg_container {
+  background-color: #201F1F;
+}
+
+
